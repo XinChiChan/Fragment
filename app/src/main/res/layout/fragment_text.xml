@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="帳號" />
+
+    <EditText
+        android:id="@+id/edit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入帳號"/>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="密碼" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="請輸入密碼"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:text="確定"
+            android:layout_height="wrap_content"
+           android:layout_toLeftOf="@+id/register"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="註冊"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
